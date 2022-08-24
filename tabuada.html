@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha() {
+		document.write('<br>');
+		document.write('<br>');
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var valorTabuada = parseInt(prompt('Digite o número que deseja ver a tabuada: '));
+	var multiplicador = 1;
+	while(multiplicador <= 10){
+		mostra(valorTabuada * multiplicador);
+		multiplicador++; //modo de incrementar diferente ++ é o mesmo de multiplicador = multiplicador + 1
+	}
+
+	mostra('FIM')
+
+</script>
